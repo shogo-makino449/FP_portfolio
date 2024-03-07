@@ -8,6 +8,7 @@
   font-family: "Zen Old Mincho", serif;
   box-sizing: border-box;
 }
+
 /*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー 
 画面上にスクロールボタン
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
@@ -40,6 +41,7 @@
   background-color: greenyellow;
   /* マウスホバー時の背景色 */
 }
+
 /*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー 
 パンクくずリスト
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
@@ -63,18 +65,27 @@
   color: gray;
 }
 
+.breadcrumbHome:hover {
+  border-bottom: 1px solid gray;
+}
+
 #breadcrumb li:last-child {
   font-weight: bold;
 }
 
-.breadcrumbIcon{
-    display: inline-block;
-    width: 20px; /* アイコンの幅 */
-    height: 16px; /* アイコンの高さ */
-    background-image: url('images/homeIcon.png'); /* アイコン画像のURL */
-    background-size: cover; /* 画像を要素全体に広げる */
-    background-repeat: no-repeat; /* 画像の繰り返しを無効にする */
-    filter:opacity(0.3);
+.breadcrumbIcon {
+  display: inline-block;
+  width: 20px;
+  /* アイコンの幅 */
+  height: 16px;
+  /* アイコンの高さ */
+  background-image: url('images/homeIcon.png');
+  /* アイコン画像のURL */
+  background-size: cover;
+  /* 画像を要素全体に広げる */
+  background-repeat: no-repeat;
+  /* 画像の繰り返しを無効にする */
+  filter: opacity(0.3);
 }
 
 
@@ -90,6 +101,7 @@
   justify-content: space-between;
   margin: 30px auto;
   width: 80%;
+  max-width: 1024px;
 }
 
 .header_logo h1 {
@@ -156,6 +168,71 @@
   line-height: 3.5;
 }
 
+
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー 
+フッター
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+footer {
+  background-color: green;
+  color: white;
+  margin-top: 20px;
+}
+
+.footer_contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 50px 0;
+  max-width: 789px;
+  width: 70%;
+}
+
+.footer_left h1 {
+  font-size: 40px;
+}
+
+.footer_left p {
+  margin: 20px 0;
+  line-height: 2;
+}
+
+.footer_right div {
+  width: 150px;
+  margin: 5px 30px 5px 0;
+  font-weight: bold;
+  height: 30px;
+  position: relative;
+  /* display: block; */
+}
+
+.footer_right a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  /* リンクの下線を削除 */
+  color: inherit;
+  /* リンクの色を親要素と同じにする */
+  position: absolute;
+  /* 絶対位置指定 */
+  top: 0;
+  /* 上端に配置 */
+  left: 0;
+  /* 左端に配置 */
+  line-height: 2;
+}
+
+.footer_right div:hover {
+  border-bottom: 1px solid white;
+}
+
+.footer_copy {
+  background-color: gray;
+  text-align: center;
+  padding: 10px;
+}
+
 /*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー 
 メイン
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
@@ -209,7 +286,7 @@
   margin: 50px 0 30px;
 }
 
-.about_text {
+.text {
   line-height: 2;
 }
 
@@ -302,70 +379,6 @@ textarea {
 
 
 /*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー 
-フッター
-ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
-footer {
-  background-color: green;
-  color: white;
-  margin-top: 20px;
-}
-
-.footer_contents {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 50px 0;
-  max-width: 789px;
-  width: 70%;
-}
-
-.footer_left h1 {
-  font-size: 40px;
-}
-
-.footer_left p {
-  margin: 20px 0;
-  line-height: 2;
-}
-
-.footer_right div {
-  width: 150px;
-  margin: 5px 30px 5px 0;
-  font-weight: bold;
-  height: 30px;
-  position: relative;
-  /* display: block; */
-}
-
-.footer_right a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  /* リンクの下線を削除 */
-  color: inherit;
-  /* リンクの色を親要素と同じにする */
-  position: absolute;
-  /* 絶対位置指定 */
-  top: 0;
-  /* 上端に配置 */
-  left: 0;
-  /* 左端に配置 */
-  line-height: 2;
-}
-
-.footer_right div:hover {
-  border-bottom: 1px solid white;
-}
-
-.footer_copy {
-  background-color: gray;
-  text-align: center;
-  padding: 10px;
-}
-
-/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー 
 自己紹介
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 .mainTop {
@@ -377,11 +390,11 @@ footer {
   color: white;
   background-image: url(images/top_backimage2.jpg);
   background-size: cover;
-  background-position:0 -500px;
+  background-position: 0 -500px;
   background-repeat: no-repeat;
 }
 
-.mainTop_cover{
+.mainTop_cover {
   background-color: #99c520bd;
   width: 100%;
   height: 100%;
@@ -394,10 +407,28 @@ footer {
   font-size: 40px;
   /* text-align: center; */
 }
-.introduction{
+
+.introduction {
   width: 100%;
   height: 500px;
   background-color: gainsboro;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduction_contents {
+  max-width: 1024px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduction_left {
+  width: auto;
+  height: 100%;
+  background: url(images/seizitu.jpg) no-repeat left center;
 }
 
 /*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー 

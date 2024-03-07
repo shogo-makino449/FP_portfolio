@@ -1,107 +1,155 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex,follow" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-    <!-- googleフォント -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap"
-      rel="stylesheet"
-    />
-    <title>自己紹介｜〇〇〇〇のHP</title>
-  </head>
 
-  <body>
-    <!-- ヘッダー -->
-    <header class="header">
-      <div class="header_contents">
-        <div class="header_logo">
-          <p>あなたの暮らしのパートナー</p>
-          <h1><a href="index.html">〇〇〇〇のHP</a></h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex,follow" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <!-- googleフォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet" />
+  <title>自己紹介｜〇〇〇〇のHP</title>
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header_contents">
+      <div class="header_logo">
+        <p>あなたの暮らしのパートナー</p>
+        <h1><a href="index.html">〇〇〇〇のHP</a></h1>
+      </div>
+      <button class="reservationButton"><a href="page-form.html">✉ 個人相談のご予約</a></button>
+    </div>
+    <div class="header_navi_back">
+      <div class="header_navi_list">
+        <div><a href="page-profile.html">自己紹介</a></div>
+        <div><a href="page-service.html">サービス案内</a></div>
+        <div><a href="page-lifefack.html">お役立ち情報</a></div>
+        <div><a href="page-faq.html">Q＆A</a></div>
+        <div><a href="page-seminar.html">セミナー案内</a></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- メイン -->
+  <main>
+    <article class="mainTop">
+      <div class="mainTop_cover">
+        <h2>自己紹介</h2>
+      </div>
+    </article>
+
+    <!-- パンくずリスト -->
+    <div id="breadcrumb" class="articleMain">
+      <ul>
+        <li class="breadcrumbHome"><a href="index.html"><span class="breadcrumbIcon"></span> HOME</a>
+        </li>
+        <li> /</li>
+        <li>自己紹介</li>
+      </ul>
+    </div>
+
+    <!-- 自己紹介FV -->
+    <div class="introduction">
+      <div class="introduction_contents">
+        <div class="introduction_left"></div>
+        <div class="introduction_right">
+          <p>ファイナンシャル・プランナー</p>
+          <p>〇〇　〇〇</p>
+          <p>〇〇　〇〇</p>
+          <p>
+            1900年　石川県金沢生まれ<br>
+            〇〇大学　卒業<br>
+            ライプフランニンフ、保険紹介、資産運用<br>
+          </p>
         </div>
+      </div>
+    </div>
+
+    <article class="articleMain">
+      <section class="profile_contents">
+        <h2 class="profile_contents_title titleStyle">経歴</h2>
+        <p class="text">
+          ・5年以上のファイナンシャルプランニングの経験<br>
+          ・投資アドバイス、リスク管理、退職プランニング、税務計画の分野で実績<br>
+          ・クライアントに対する詳細なニーズのヒアリングと、それに基づく個別のソリューションの提供に重点を置いたアプローチ
+        </p>
+      </section>
+      <section class="profile_contents2">
+        <h2 class="profile_contents2_title titleStyle">保有資格</h2>
+        <p class="text">
+          ・ファイナンシャルプランニング技能士（CFP）<br>
+          ・投資顧問業者（IIROC）のライセンス<br>
+          ・生命保険士の資格
+          ・Million Dollar Round Table（MDRT）
+        </p>
+      </section>
+      <section class="profile_contents3">
+        <h2 class="profile_contents3_title titleStyle">趣味・プライベート</h2>
+        <p class="text">
+          ・バンド活動（ドラム）<br>
+          ・イヤホン収集<br>
+          ・お酒
+        </p>
+      </section>
+      <section class="profile_contents4">
+        <h2 class="profile_contents4_title titleStyle">職歴</h2>
+        <div>
+          <h3>ファイナンシャルプランナー</h3>
+          <h3>〇〇パートナ株式会社</h3>
+          <p>2021年1月 - 現在</p>
+          <p class="text">
+            ・クライアントの財務目標に合わせた総合的なプランの作成<br>
+            ・資産形成のための投資戦略の提案と実行<br>
+            ・リスク管理と保険プランの調整
+            ・退職プランニングのアドバイスと貯蓄目標の設定
+          </p>
+        </div>
+        <div>
+          <h3>営業</h3>
+          <h3>〇〇産業株式会社</h3>
+          <p>2010年1月 - 2020年12月</p>
+          <p class="text">
+            ・工作機器の営業<br>
+            ・北陸エリア管轄<br>
+            ・〇〇株式会社に製品納入
+          </p>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="footer_contents">
+      <div class="footer_left">
+        <h1><a href="index.html">〇〇〇〇のHP</a></h1>
+        <p>
+          住所：石川県金沢市〇〇〇町〇〇〇<br />
+          電話番号：090-0000-0000<br />
+          Email：tyometyometyome@tyome.com<br />
+        </p>
         <button class="reservationButton"><a href="page-form.html">✉ 個人相談のご予約</a></button>
       </div>
-      <div class="header_navi_back">
-        <div class="header_navi_list">
-          <div><a href="page-profile.html">自己紹介</a></div>
+      <div class="footer_right">
+        <div><a href="page-profile.html">自己紹介</a></div>
         <div><a href="page-service.html">サービス案内</a></div>
         <div><a href="page-lifefack.html">お役立ち情報</a></div>
         <div><a href="page-faq.html">Q＆A</a></div>
         <div><a href="page-seminar.html">セミナー案内</a></div>
-        </div>
       </div>
-    </header>
+    </div>
+    <div class="footer_copy">
+      Copyright © 〇〇〇〇のHP All Rights Reserved.
+    </div>
+  </footer>
 
-    <!-- メイン -->
-    <main>
-      <article class="mainTop">
-        <div class="mainTop_cover">
-          <h2>自己紹介</h2>
-        </div>
-      </article>
+  <button id="backToTopBtn" onclick="scrollToTop()">↑</button>
+</body>
 
-      <!-- パンくずリスト -->
-      <div id="breadcrumb" class="articleMain">
-        <ul>
-          <li><a href="index.html"><span class="breadcrumbIcon"></span> HOME</a><span> /</span></li>
-          <li>自己紹介</li>
-        </ul>
-      </div>
-
-      <!-- 自己紹介FV -->
-      <div class="introduction">
-        <div class="introduction_contents">
-          <div class="introduction_left"></div>
-          <div class="introduction_right"></div>
-        </div>
-      </div>
-
-      <article class="articleMain">
-        <section class="about">
-          <h2 class="about_title titleStyle">FPとは</h2>
-          <p class="about_text">
-            FP(ファイナンシャルプランナー)とは、財務の専門家であり、個人や家族が健全な財務状況を維持し、将来の目標を達成するための計画を立てるお手伝いをする人です。貯蓄や投資、保険、退職計画などの財務領域に詳しく、お客様と一緒に、お客様が望む生活や将来の夢に向けて具体的なステップを考えます。<br />
-            お客様の立場に立って最善のアドバイスを提供し、お客様の財務的な不安や悩みを解決するために尽力します。<br />
-            私たちの目標は、お客様がより安心して、より豊かな人生を送る手助けをすることです。
-          </p>
-        </section>
-      </article>
-    </main>
-
-    <!-- フッター -->
-    <footer class="footer">
-      <div class="footer_contents">
-        <div class="footer_left">
-          <h1><a href="index.html">〇〇〇〇のHP</a></h1>
-          <p>
-            住所：石川県金沢市〇〇〇町〇〇〇<br />
-            電話番号：090-0000-0000<br />
-            Email：tyometyometyome@tyome.com<br />
-          </p>
-          <button class="reservationButton"><a href="page-form.html">✉ 個人相談のご予約</a></button>
-        </div>
-        <div class="footer_right">
-          <div><a href="page-profile.html">自己紹介</a></div>
-        <div><a href="page-service.html">サービス案内</a></div>
-        <div><a href="page-lifefack.html">お役立ち情報</a></div>
-        <div><a href="page-faq.html">Q＆A</a></div>
-        <div><a href="page-seminar.html">セミナー案内</a></div>
-        </div>
-      </div>
-      <div class="footer_copy">
-        Copyright © 〇〇〇〇のHP All Rights Reserved.
-      </div>
-    </footer>
-
-    <button id="backToTopBtn" onclick="scrollToTop()">↑</button>
-  </body>
 </html>
