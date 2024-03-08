@@ -50,6 +50,9 @@
   height: 40px;
   display: flex;
   align-items: center;
+  max-width: 1024px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 #breadcrumb ul {
@@ -273,7 +276,7 @@ footer {
 .articleMain {
   width: 90%;
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
 }
 
 .titleStyle {
@@ -283,11 +286,12 @@ footer {
   border-radius: 10px;
   border: 3px dotted green;
   color: white;
-  margin: 50px 0 30px;
+  margin: 10px 0 30px;
 }
 
 .text {
   line-height: 2;
+  margin-bottom: 50px;
 }
 
 .news-item {
@@ -457,7 +461,51 @@ textarea {
 /*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー 
 サービス案内
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+.service_top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
 
+.service_top_left {
+  width: 50vw;
+  flex: 6;
+}
+
+.service_text {
+  line-height: 2;
+}
+
+.service_text a {
+  color: blue;
+  font-weight: bold;
+}
+
+.service_text a:hover {
+  color: red;
+}
+
+.service_top_right {
+  height: 200px;
+  flex: 4;
+}
+
+.service_top_img {
+  height: 100%;
+  width: auto;
+  background: url(images/service.jpeg) no-repeat center bottom/cover;
+}
+
+.titleStyleH3 {
+  font-size: 30px;
+  padding: 20px;
+  border-top: 1px dotted gray;
+  border-bottom: 1px dotted gray;
+  margin: 50px 0 20px;
+  background-color: ghostwhite;
+}
+
+.
 /*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー 
 お役立ち情報
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
