@@ -505,10 +505,63 @@ textarea {
   background-color: ghostwhite;
 }
 
-.
+
 /*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー 
 お役立ち情報
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+.lifehack_single {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  border-bottom: 1px solid gray;
+  margin-top: 20px;
+}
+
+.lifehack_single_imgbox {
+  width: 40vw;
+  height: 100%;
+  padding: 0 0 20px 0;
+}
+
+.lifehack_single_img {
+  width: auto;
+  height: 100%;
+  background: url(images/hoken.jpeg) no-repeat center center/cover;
+}
+
+.lifehack_single_contents {
+  margin: 0 0 20px 30px;
+}
+
+.lifehack_single_contents_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.lifehack_single_contents_item p {
+  font-size: 12px;
+}
+
+.lifehack_single_contents_item p:last-child {
+  font-size: 12px;
+  background-color: #99c520;
+  color: white;
+  padding: 5px;
+  border: 1px solid gray;
+}
+
+.lifehack_single_contents_title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.lifehack_single_contents_text {
+  font-size: 14px;
+}
 
 /*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー 
 Q&A
