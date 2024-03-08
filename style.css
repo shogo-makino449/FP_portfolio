@@ -498,11 +498,19 @@ textarea {
 
 .titleStyleH3 {
   font-size: 30px;
-  padding: 20px;
-  border-top: 1px dotted gray;
+  padding: 20px 10px;
+  border-top: 1px dotted rgb(8, 5, 5)2, 2, 2);
   border-bottom: 1px dotted gray;
   margin: 50px 0 20px;
   background-color: ghostwhite;
+}
+
+.titleStyleH3::before {
+  content: '●';
+  display: inline-block;
+  color: #99c520;
+  font-size: 20px;
+  margin-right: 10px;
 }
 
 
@@ -515,7 +523,7 @@ textarea {
   justify-content: center;
   width: 100%;
   height: 200px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid gainsboro;
   margin-top: 20px;
 }
 
